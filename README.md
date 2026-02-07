@@ -29,7 +29,7 @@ pip install pandas faker numpy transformers datasets torch sentence-transformers
 Confluence Bot/
 ├── Dataset_Generator.ipynb          # Generates confluence_pages.csv
 ├── T5_QnA_FineTuning.ipynb         # Fine-tunes T5 model
-├── Wiley_Confluence_ChatBot.ipynb  # Main chatbot application
+├── Confluence_ChatBot.ipynb  # Main chatbot application
 ├── confluence_pages.csv            # Generated dataset (created in Step 1)
 ├── trained_t5_model/               # Fine-tuned model (created in Step 2)
 ├── bot.jpg                         # Chatbot avatar image
