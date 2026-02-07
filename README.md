@@ -1,4 +1,4 @@
-# Wiley Confluence Bot (WileyGPT)
+# Confluence Bot (GPT)
 
 A chatbot application that uses fine-tuned T5 model and sentence embeddings to answer questions based on Confluence page data.
 
@@ -26,7 +26,7 @@ pip install pandas faker numpy transformers datasets torch sentence-transformers
 ## Project Structure
 
 ```
-Wiley Confluence Bot/
+Confluence Bot/
 ├── Dataset_Generator.ipynb          # Generates confluence_pages.csv
 ├── T5_QnA_FineTuning.ipynb         # Fine-tunes T5 model
 ├── Wiley_Confluence_ChatBot.ipynb  # Main chatbot application
@@ -85,17 +85,17 @@ Wiley Confluence Bot/
 
 ### Step 3: Run the Chatbot
 
-**File:** `Wiley_Confluence_ChatBot.ipynb`
+**File:** `Confluence_ChatBot.ipynb`
 
 **Purpose:** Launches an interactive GUI chatbot that answers questions based on the Confluence dataset.
 
 **Prerequisites:**
 - ✅ `confluence_pages.csv` exists (from Step 1)
 - ✅ `./trained_t5_model/` exists (from Step 2)
-- ✅ `bot.jpg` exists at: `C:\Users\locperera\OneDrive - Wiley\Documents\AI Hackathon\bot.jpg`
+- ✅ `bot.jpg` exists at: `C:\Users\locperera\OneDrive\Documents\AI Hackathon\bot.jpg`
 
 **Instructions:**
-1. Open `Wiley_Confluence_ChatBot.ipynb`
+1. Open Confluence_ChatBot.ipynb`
 2. Verify all prerequisites are met
 3. Run all cells (Cell → Run All)
 4. The WileyGPT GUI window will appear
@@ -106,7 +106,7 @@ Wiley Confluence Bot/
 - T5-based answer generation
 - Similarity scoring for relevance
 - Scrollable conversation history
-- Modern GUI with Wiley branding
+- Modern GUI with custom branding
 
 ---
 
@@ -171,17 +171,11 @@ learning_rate=2e-5,              # Modify learning rate
 ```
 
 ### Change Image Path
-In `Wiley_Confluence_ChatBot.ipynb`, update:
+In `Confluence_ChatBot.ipynb`, update:
 ```python
-image_path = r'C:\Users\locperera\OneDrive - Wiley\Documents\AI Hackathon\bot.jpg'
+image_path = r'C:\Users\locperera\OneDrive\Documents\AI Hackathon\bot.jpg'
 ```
-
-## Credits
-
-**Team Tesseract - AI Hackcelerate**
-
-Developed for Wiley's AI Hackathon to create an intelligent Confluence bot for knowledge retrieval and question answering.
 
 ## License
 
-Internal use only - Wiley & Sons, Inc.
+Internal use only.
